@@ -1,0 +1,52 @@
+@import "../../App.scss";
+
+.name {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 33px;
+  &:last-child {
+    margin-top: 20px;
+  }
+}
+
+.innerName {
+  position: absolute;
+  top: 40px;
+  left: 39px;
+}
+
+.line {
+  margin-top: 73px !important;
+  border: none;
+  border-top: 2px solid #0097a7;
+  border-bottom: 2px solid #0097a7;
+  height: 179px;
+  width: 1298px;
+  margin: 0 auto;
+  position: relative;
+  & > img {
+    position: absolute;
+    width: 352px;
+    height: 411px;
+    bottom: -411px;
+    right: 182px;
+  }
+}
+.lineBox {
+  @extend .container;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  height: 100%;
+}
+
+.calculateButton {
+  font-size: 24px;
+  font-weight: 700;
+  background: transparent;
+  border: none;
+  width: 342px;
+  height: 66px;
+  border-radius: 30px;
+  box-shadow: 3px 3px 15px 0px #00000040;
+}

@@ -1,0 +1,31 @@
+@import "../../App.scss";
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: inter;
+}
+
+.heading {
+  font-weight: 700;
+  width: 180px;
+  text-align: left;
+}
+
+.contactBox {
+  display: flex;
+  & > a {
+    margin-right: 20px;
+    width: 60px;
+    height: 60px;
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+}
+
+.phone {
+  font-weight: 600;
+  font-size: 20px;
+}

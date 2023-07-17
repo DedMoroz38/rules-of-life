@@ -1,0 +1,68 @@
+@import "../../App.scss";
+
+.main {
+  height: 572px;
+  margin-top: 101px;
+  position: relative;
+}
+
+.box {
+  @extend .container;
+  margin-bottom: 81px;
+}
+
+.subHeading {
+  font-size: 20px;
+  color: #757575;
+}
+
+.description {
+  font-weight: 400;
+  font-size: 24px;
+  color: #212121;
+  margin-top: 25px;
+  margin-bottom: 110px;
+}
+
+.attachButton {
+  cursor: pointer;
+  border: none;
+  border-radius: 45px;
+  background: rgba(255, 87, 34, 0.85);
+  box-shadow: 3px 3px 15px 0px #00000040;
+  color: white;
+  font-size: 24px;
+  width: 388px;
+  height: 66px;
+  margin-top: 110px;
+}
+
+.right {
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: #25909b;
+  width: 590px;
+  height: 572px;
+}
+
+.descriptionContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 30px;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.descriptionBox {
+  font-weight: 700;
+  font-style: 20px;
+  color: #212121;
+  padding: 22px 27px;
+  display: flex;
+  height: 196px;
+  background-repeat: no-repeat;
+  background: rgba(178, 235, 242, 0.35);
+  border-radius: 25px;
+}
