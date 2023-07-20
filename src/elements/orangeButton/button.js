@@ -1,5 +1,13 @@
 import Styles from "./button.module.scss";
 
-export const OrangeButton = ({ name }) => {
-  return <button className={Styles.button}>{name}</button>;
+export const OrangeButton = ({ name, width, onClickFunction }) => {
+  return (
+    <button
+      onClick={onClickFunction}
+      className={Styles.button}
+      style={{ width: width }}
+    >
+      {name}
+    </button>
+  );
 };

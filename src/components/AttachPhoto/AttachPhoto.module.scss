@@ -1,0 +1,161 @@
+@mixin input-box {
+  font-size: 22px;
+  color: rgba(0, 0, 0, 0.8);
+  border: none;
+  background: rgba(178, 235, 242, 0.25);
+  margin-bottom: 20px;
+  width: 586px;
+  height: 75px;
+  border-radius: 37px;
+  box-shadow: 3px 3px 15px 0px rgba(0, 0, 0, 0.35);
+  padding: 0 56px;
+  & > input {
+    @include input-box;
+    &:last-child {
+      margin-bottom: 40px;
+    }
+    &::placeholder {
+      padding-left: 5px;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 34px;
+      color: #757575;
+    }
+  }
+}
+
+@mixin modal-window {
+  width: 675px;
+  border-radius: 30px;
+  background: white;
+  box-shadow: 3px 3px 15px 0px rgba(0, 0, 0, 0.35);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 47px 69px 48px;
+  & > h2 {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 52px;
+    margin-bottom: 4px;
+  }
+  // & > input {
+  //   @include input-box;
+  //   &:last-child {
+  //     margin-bottom: 40px;
+  //   }
+  //   &::placeholder {
+  //     padding-left: 5px;
+  //     font-size: 20px;
+  //     font-weight: 400;
+  //     line-height: 34px;
+  //     color: #757575;
+  //   }
+  // }
+}
+
+@mixin sub-text {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #757575;
+  &:first-of-type {
+    margin-bottom: 31px;
+  }
+  &:last-of-type {
+    width: 380px;
+    text-align: center;
+    margin-bottom: 37px;
+  }
+}
+
+.phoneBox {
+  @include input-box;
+  display: flex;
+  align-items: center;
+}
+
+.main {
+  @include modal-window;
+}
+
+.filesBox {
+  position: relative;
+  display: flex;
+  align-items: center;
+  @include input-box;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 34px;
+  color: #757575;
+  & > label {
+    display: flex;
+    align-items: center;
+    right: 69px;
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+    cursor: pointer;
+  }
+}
+
+.fileNamesBox {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  overflow-y: scroll;
+  padding-top: 15px;
+  & > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    & > img {
+      cursor: pointer;
+      height: 30px;
+      filter: invert(84%) sepia(11%) saturate(0%) hue-rotate(174deg)
+        brightness(90%) contrast(87%);
+    }
+  }
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  &::-webkit-scrollbar-track {
+    display: none;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    display: none;
+  }
+}
+
+.file {
+  padding-right: 100px;
+}
+
+.fileName {
+  font-size: 22px;
+  color: rgba(0, 0, 0, 0.8);
+  flex-shrink: 0;
+  text-wrap: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  height: 30px;
+  margin-bottom: 8px;
+}
+
+.fieldName {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 34px;
+  width: 100%;
+  margin-bottom: 10px;
+  & > span {
+    color: #ff5722;
+  }
+}
+.subtext {
+  @include sub-text;
+}

@@ -1,0 +1,6 @@
+@import "../../App.scss";
+
+.main {
+  @extend .container;
+  margin-bottom: 29px;
+}

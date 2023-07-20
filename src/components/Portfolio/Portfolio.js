@@ -10,7 +10,16 @@ const Portfolio = () => {
         name="Портфолио"
         extraStyles={{ margin: "0 auto", marginBottom: "47px" }}
       />
-      <SwipingGallery />
+      <SwipingGallery
+        slidesPerView={2}
+        arrowSize={"70px"}
+        slideDimentions={{
+          height: "611px",
+          width: "431px",
+        }}
+        arrowPosition={"-80px"}
+        swiperWidth={"908px"}
+      />
     </div>
   );
 };

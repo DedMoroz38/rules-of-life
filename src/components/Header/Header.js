@@ -13,15 +13,17 @@ const Header = () => {
   return (
     <div className={Styles.container}>
       <header className={Styles.header}>
-        <h1 className={Styles.heading}>ПРАВИЛА ЖИЗНИ</h1>
-        <Selector
-          fields={["Сначала легкие", "Сначала сложные"]}
-          onClickFunction={setSort}
-          heading={"sort"}
-          setOpenedSelector={setOpenedSelector}
-          name={"акции"}
-          openedSelector={openedSelector}
-        />
+        <div className={Styles.left}>
+          <h1 className={Styles.heading}>ПРАВИЛА ЖИЗНИ</h1>
+          <Selector
+            fields={["Сначала легкие", "Сначала сложные"]}
+            onClickFunction={setSort}
+            heading={"акции"}
+            setOpenedSelector={setOpenedSelector}
+            name={"акции"}
+            openedSelector={openedSelector}
+          />
+        </div>
         <div className={Styles.contactBox}>
           <a href="">
             <img src={wa} alt="whats app" />
@@ -36,9 +38,9 @@ const Header = () => {
         <Selector
           fields={["Сначала легкие", "Сначала сложные"]}
           onClickFunction={setSort}
-          heading={"sort"}
+          heading={"Москва"}
           setOpenedSelector={setOpenedSelector}
-          name={"акции"}
+          name={"город"}
           openedSelector={openedSelector}
         />
         <p className={Styles.phone}>+7 800 000 77 11</p>

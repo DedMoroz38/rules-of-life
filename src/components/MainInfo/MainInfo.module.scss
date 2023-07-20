@@ -42,9 +42,11 @@
   position: absolute;
   top: 0;
   right: 0;
-  background: #25909b;
-  width: 590px;
-  height: 572px;
+  border: 1px solid #000;
+  & > img {
+    width: 490px;
+    height: 572px;
+  }
 }
 
 .descriptionContainer {

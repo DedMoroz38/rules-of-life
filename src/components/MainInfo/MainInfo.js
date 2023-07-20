@@ -1,9 +1,24 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Styles from "./MainInfo.module.scss";
 import { OrangeButton } from "../../elements/orangeButton/button";
 import { Heading } from "../../elements/heading/heading";
+import bear from "../../images/bear.png";
+import PhotoAttachModalWindow from "../AttachPhoto/AttachPhoto.js";
 
 const MainInfo = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  useEffect(() => {
+    isOpen
+      ? (document.body.style.cssText = `
+        overflow: hidden;
+        padding-right: 10px;
+      `)
+      : (document.body.style.cssText = `
+        overflow: visible;
+        padding-right: 0;
+      `);
+  }, [isOpen]);
+
   const descriptionTexts = [
     "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit",
     "There is no one who loves pain itself, who seeks after it and wants to have it, simply because ",
@@ -16,22 +31,24 @@ const MainInfo = () => {
         <p className={Styles.subHeading}>Подзаголовок</p>
         <Heading
           name={"Выполним работу за 45 дней в любом городе России"}
-          extraStyles={{ width: "900px" }}
+          extraStyles={{ width: "900px", marginTop: "50px" }}
         />
         <p className={Styles.description}>Описание</p>
-        <OrangeButton name="Прикрепить фотографию" />
-        <div className={Styles.right}></div>
+        <OrangeButton
+          onClickFunction={() => setIsOpen(!isOpen)}
+          name="Прикрепить фотографию"
+          width="388px"
+        />
+        <div className={Styles.right}>
+          <img src={bear} alt="" />
+        </div>
       </div>
       <div className={Styles.descriptionContainer}>
         <div className={Styles.descriptionBox}>{descriptionTexts[0]}</div>
         <div className={Styles.descriptionBox}>{descriptionTexts[1]}</div>
         <div className={Styles.descriptionBox}>{descriptionTexts[2]}</div>
-        {/* {descriptionTexts.map((text, index) => {
-          <div key={index} className={Styles.descriptionBox}>
-            {text}
-          </div>;
-        })} */}
       </div>
+      {isOpen && <PhotoAttachModalWindow setIsOpen={setIsOpen} />}
     </div>
   );
 };

@@ -7,19 +7,25 @@ import { Pagination, Navigation } from "swiper";
 import { useRef } from "react";
 import arrow from "../../images/arrow.svg";
 
-const SwipingGallery = () => {
+const SwipingGallery = ({
+  slidesPerView,
+  arrowSize,
+  slideDimentions,
+  arrowPosition,
+  swiperWidth,
+}) => {
   const attachmentsArray = [1, 2, 3, 4];
   const navPrevRef = useRef(null);
   const navNextRef = useRef(null);
 
   return (
-    <div className={Styles.swiper_box}>
+    <div className={Styles.swiper_box} style={{ width: swiperWidth }}>
       <Swiper
         pagination={{
           clickable: true,
         }}
         spaceBetween={20}
-        slidesPerView={2}
+        slidesPerView={slidesPerView}
         navigation={{
           prevEl: navPrevRef.current,
           nextEl: navNextRef.current,
@@ -29,14 +35,38 @@ const SwipingGallery = () => {
         className={Styles.swiper}
       >
         {attachmentsArray.map((slide, index) => (
-          <SwiperSlide>
-            <div key={index} className={Styles.slide}></div>
+          <SwiperSlide key={index}>
+            <div
+              style={{
+                height: slideDimentions.height,
+                width: slideDimentions.width,
+              }}
+              className={Styles.slide}
+            ></div>
           </SwiperSlide>
         ))}
-        <div className={`${Styles.arrow} ${Styles.prev}`} ref={navPrevRef}>
+        <div
+          style={{
+            width: arrowSize,
+            height: arrowSize,
+            top: `calc(50% - ${arrowSize} / 2 )`,
+            left: arrowPosition,
+          }}
+          className={`${Styles.arrow} ${Styles.prev}`}
+          ref={navPrevRef}
+        >
           <img src={arrow} alt="arrow" />
         </div>
-        <div className={`${Styles.arrow} ${Styles.next}`} ref={navNextRef}>
+        <div
+          style={{
+            width: arrowSize,
+            height: arrowSize,
+            top: `calc(50% - ${arrowSize} / 2 )`,
+            right: arrowPosition,
+          }}
+          className={`${Styles.arrow} ${Styles.next}`}
+          ref={navNextRef}
+        >
           <img src={arrow} alt="arrow" />
         </div>
       </Swiper>

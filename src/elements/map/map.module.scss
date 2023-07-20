@@ -1,0 +1,7 @@
+@import "../../App.scss";
+
+.mapElement {
+  & > path {
+    fill: rgba(255, 87, 34, 0.85);
+  }
+}

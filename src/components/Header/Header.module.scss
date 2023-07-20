@@ -1,6 +1,7 @@
 @import "../../App.scss";
 
 .header {
+  margin-top: 56px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -11,6 +12,13 @@
   font-weight: 700;
   width: 180px;
   text-align: left;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 304px;
 }
 
 .contactBox {

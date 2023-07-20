@@ -1,22 +1,6 @@
-$green: #00a876;
-$shadow: rgba(0, 168, 118, 0.2);
-
-.form-selector {
-  margin-top: 61px;
-}
-
-.filters-title {
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 26px;
-  color: black;
-  padding-bottom: 15px;
-}
-
 .__select {
   position: relative;
   display: flex;
-  width: 230px;
   height: 32px;
 
   &_active {
@@ -49,43 +33,30 @@ $shadow: rgba(0, 168, 118, 0.2);
 }
 
 .__select__title {
+  background: transparent;
   display: flex;
   align-items: center;
-  width: 100%;
-  height: 100%;
-  padding: 8px 9px;
   cursor: pointer;
-  background: #ffffff;
-  border: 2px solid #000000;
-  border-radius: 8px;
-  font-size: 14px;
-  line-height: 16px;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 29px;
 
   &::before,
   &::after {
     content: "";
     position: absolute;
-    top: 50%;
-    right: 16px;
     display: block;
+    top: 18px;
+    right: -20px;
     width: 10px;
     height: 2px;
     transition: all 0.3s ease-out;
-    background-color: #333333;
+    background-color: #bdbdbd;
     transform: translate(-3px, -50%) rotate(45deg);
   }
 
   &::after {
     transform: translate(3px, -50%) rotate(-45deg);
-  }
-
-  &:hover {
-    border-color: $green;
-
-    &::before,
-    &::after {
-      background-color: $green;
-    }
   }
 }
 
@@ -151,7 +122,6 @@ $shadow: rgba(0, 168, 118, 0.2);
   }
 
   &:hover {
-    background-color: $green !important;
     color: #ffffff;
   }
 
