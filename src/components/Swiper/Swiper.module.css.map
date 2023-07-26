@@ -1,9 +1,1 @@
-{
-    "version": 3,
-    "mappings": "AAGA,AAAA,MAAM,CAAC;EACL,KAAK,EAAE,KAAK;EACZ,MAAM,EAAE,KAAK;EACb,MAAM,EAAE,cAAc;EACtB,UAAU,EAAE,OAAkB;EAC9B,MAAM,EAAE,MAAM;CACf",
-    "sources": [
-        "Swiper.module.scss"
-    ],
-    "names": [],
-    "file": "Swiper.module.css"
-}
+{"version":3,"sources":["Swiper.module.scss","Swiper.module.css"],"names":[],"mappings":"AAAA;EACE,cAAA;EACA,mBAAA;EACA,oBAAA;EACA,gBAAA;ACCF;ADAE;EALF;IAMI,gBAAA;ECGF;AACF;;ADAA;EACE,cAAA;EACA,mBAAA;ACGF;;ADAA;EACE,mBAAA;EACA,kBAAA;EACA,eAAA;EACA,eAAA;EACA,UAAA;EACA,aAAA;EACA,mBAAA;EACA,uBAAA;EACA,wCAAA;ACGF;ADFE;EAVF;IAWI,aAAA;ECKF;AACF;ADHE;EACE,gBAAA;ACKJ;;ADDA;EACE,yBAAA;ACIF","file":"Swiper.module.css"}

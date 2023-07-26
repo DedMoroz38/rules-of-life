@@ -39,14 +39,14 @@ const AttachPhoto = ({ setIsOpen }) => {
       <p className={Styles.fieldName}>
         Из какого вы города?<span>*</span>
       </p>
-      <div className={Styles.phoneBox}>
-        <CountryCodeSelector />
-        <input type="text" placeholder="Москва" />
-      </div>
+      <input type="text" placeholder="Москва" />
       <p className={Styles.fieldName}>
         Введите номер телефона<span>*</span>
       </p>
-      <PhoneInput value={phone} onChange={handleInput}></PhoneInput>
+      <div className={Styles.phoneBox}>
+        <CountryCodeSelector />
+        <PhoneInput value={phone} onChange={handleInput}></PhoneInput>
+      </div>
       <p className={Styles.fieldName}>
         Прикрепить фото<span>*</span>
       </p>

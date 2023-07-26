@@ -3,8 +3,8 @@ import Styles from "./GetConsultation.module.scss";
 import ModalWindow from "../ModalWindow/ModalWindow";
 import { OrangeButton } from "../../elements/orangeButton/button";
 import { useOutsideAlerter } from "../../hooks/useOutsideAlerter";
-import InputMask from "react-input-mask";
 import PhoneInput from "../PhoneInput/PhoneInput";
+import { CountryCodeSelector } from "../../elements/countryCodeSelector/countryCodeSelector";
 
 const GetConsultation = ({ setIsOpen }) => {
   const boxRef = useRef(null);
@@ -29,7 +29,10 @@ const GetConsultation = ({ setIsOpen }) => {
       <p className={Styles.fieldName}>
         Введите ваш номер телефона<span>*</span>
       </p>
-      <PhoneInput value={phone} onChange={handleInput}></PhoneInput>
+      <div className={Styles.phoneBox}>
+        <CountryCodeSelector />
+        <PhoneInput value={phone} onChange={handleInput}></PhoneInput>
+      </div>
       <p className={Styles.subtext}>
         Отправляя, вы соглашаетесь с политикой конфиденциальности
       </p>

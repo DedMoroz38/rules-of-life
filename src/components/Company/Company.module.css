@@ -1,0 +1,26 @@
+.container, .main {
+  max-width: 1260px;
+  margin: 0 auto;
+  padding: 0 1%;
+}
+@media (max-width: 1030px) {
+  .container, .main {
+    max-width: 800px;
+  }
+}
+@media (max-width: 440px) {
+  .container, .main {
+    max-width: 350px;
+    padding: 0;
+  }
+}
+
+.main {
+  margin-bottom: 29px;
+  margin-top: 140px;
+}
+@media (max-width: 440px) {
+  .main {
+    margin-top: 81px;
+  }
+}/*# sourceMappingURL=Company.module.css.map */

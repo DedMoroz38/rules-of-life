@@ -1,0 +1,53 @@
+.container {
+  max-width: 1260px;
+  margin: 0 auto;
+  padding: 0 1%;
+}
+@media (max-width: 1030px) {
+  .container {
+    max-width: 800px;
+  }
+}
+@media (max-width: 440px) {
+  .container {
+    max-width: 350px;
+    padding: 0;
+  }
+}
+
+.subHeading {
+  font-size: 20px;
+  font-weight: 300;
+  margin-top: 15px;
+  line-height: 27.32px;
+}
+
+.informationBox {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+}
+@media (max-width: 440px) {
+  .informationBox {
+    margin-top: 20px;
+  }
+}
+
+.information {
+  cursor: pointer;
+  height: 75px;
+  border-radius: 37px;
+  background: rgba(178, 235, 242, 0.35);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 45px;
+  padding-right: 75px;
+  margin-bottom: 40px;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 33px;
+}
+.information:last-of-type {
+  margin-bottom: 0;
+}/*# sourceMappingURL=FAQ.module.css.map */

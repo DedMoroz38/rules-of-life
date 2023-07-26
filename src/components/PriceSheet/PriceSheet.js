@@ -7,8 +7,8 @@ const PriceSheet = () => {
   return (
     <div className={Styles.main}>
       <div className={Styles.container}>
-        <Heading name="Прайс-лист" extraStyles={{ marginBottom: "50px" }} />
-        <p className={Styles.name}>Услуга</p>
+        <Heading name="Прайс-лист" />
+        <p className={`${Styles.name} ${Styles.firstService}`}>Услуга</p>
       </div>
       <div className={Styles.line}>
         <p className={`${Styles.name} ${Styles.innerName}`}>Услуга</p>
@@ -20,7 +20,9 @@ const PriceSheet = () => {
         <img src={bear} alt="" />
       </div>
       <div className={Styles.container}>
-        <p className={Styles.name}>Пролонгация услуги</p>
+        <p className={`${Styles.name} ${Styles.lastService}`}>
+          Пролонгация услуги
+        </p>
       </div>
     </div>
   );

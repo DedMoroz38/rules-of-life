@@ -4,8 +4,13 @@
   font-weight: 300;
   font-size: 20px;
   color: #757575;
+  line-height: 27px;
   &:last-of-type {
     margin-bottom: 50px;
+  }
+  @media (max-width: 440px) {
+    font-size: 18px;
+    line-height: 20px;
   }
 }
 
@@ -13,25 +18,44 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   column-gap: 30px;
+  @media (max-width: 1030px) {
+    column-gap: 20px;
+  }
+  @media (max-width: 440px) {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 200px);
+    row-gap: 15px;
+  }
 }
 
 .serviceBox {
-  height: 461px;
   border: 1px solid #bdbdbd;
   border-radius: 10px;
   padding: 39px 25px;
+  @media (max-width: 1030px) {
+    height: 361px;
+  }
+  @media (max-width: 440px) {
+    height: auto;
+    background-repeat: 8px;
+    padding: 20px 12px;
+  }
 }
 
 .serviceHeading {
   font-size: 24px;
   font-weight: 700;
   margin-bottom: 30px;
+  @media (max-width: 1030px) {
+    font-size: 20px;
+  }
 }
 
 .serviceName {
   margin-bottom: 20px;
   font-size: 20px;
   font-weight: 500;
+  font-size: 18px;
 }
 
 .buttonBox {
@@ -39,4 +63,7 @@
   width: 100%;
   display: flex;
   justify-content: center;
+  @media (max-width: 440px) {
+    margin-top: 40px;
+  }
 }

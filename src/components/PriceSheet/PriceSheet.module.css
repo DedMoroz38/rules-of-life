@@ -1,0 +1,136 @@
+.container, .lineBox {
+  max-width: 1260px;
+  margin: 0 auto;
+  padding: 0 1%;
+}
+@media (max-width: 1030px) {
+  .container, .lineBox {
+    max-width: 800px;
+  }
+}
+@media (max-width: 440px) {
+  .container, .lineBox {
+    max-width: 350px;
+    padding: 0;
+  }
+}
+
+.name {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 33px;
+}
+.name:last-child {
+  margin-top: 40px;
+}
+@media (max-width: 440px) {
+  .name:last-child {
+    margin-top: 20px;
+  }
+}
+
+.firstService {
+  margin-top: 50px !important;
+}
+
+.lastService {
+  margin-bottom: 183px;
+}
+@media (max-width: 440px) {
+  .lastService {
+    margin-bottom: 81px;
+  }
+}
+
+.innerName {
+  position: absolute;
+  top: 40px;
+  left: 39px;
+}
+@media (max-width: 1030px) {
+  .innerName {
+    position: static;
+  }
+}
+
+.line {
+  margin-top: 73px !important;
+  border: none;
+  border-top: 2px solid #0097a7;
+  border-bottom: 2px solid #0097a7;
+  height: 179px;
+  width: 1298px;
+  margin: 0 auto;
+  position: relative;
+}
+@media (max-width: 1030px) {
+  .line {
+    margin-top: 35px !important;
+    height: 100px;
+    width: 800px;
+    padding: 0 1%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid #0097a7;
+    border-bottom: 1px solid #0097a7;
+  }
+}
+@media (max-width: 440px) {
+  .line {
+    height: auto;
+    width: auto;
+    align-items: start;
+    flex-direction: column;
+    max-width: 350px;
+    padding: 20px 0;
+  }
+}
+.line > img {
+  position: absolute;
+  width: 352px;
+  height: 411px;
+  bottom: -411px;
+  right: 182px;
+}
+@media (max-width: 440px) {
+  .line > img {
+    display: none;
+  }
+}
+
+.lineBox {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  height: 100%;
+}
+@media (max-width: 1030px) {
+  .lineBox {
+    max-width: auto;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.calculateButton {
+  font-size: 24px;
+  font-weight: 700;
+  background: transparent;
+  border: none;
+  width: 342px;
+  height: 66px;
+  border-radius: 30px;
+  box-shadow: 3px 3px 15px 0px rgba(0, 0, 0, 0.2509803922);
+}
+@media (max-width: 440px) {
+  .calculateButton {
+    height: 50px;
+    font-size: 22px;
+    font-weight: 500;
+    width: -moz-fit-content;
+    width: fit-content;
+    padding: 0 20px;
+    margin-top: 20px;
+  }
+}/*# sourceMappingURL=PriceSheet.module.css.map */

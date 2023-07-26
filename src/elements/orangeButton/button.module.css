@@ -1,0 +1,18 @@
+.button {
+  cursor: pointer;
+  border: none;
+  border-radius: 45px;
+  background: rgba(255, 87, 34, 0.85);
+  box-shadow: 3px 3px 15px 0px rgba(0, 0, 0, 0.2509803922);
+  color: white;
+  font-size: 24px;
+  height: 66px;
+}
+@media (max-width: 440px) {
+  .button {
+    width: auto !important;
+    font-size: 22px;
+    height: 50px;
+    padding: 0 20px;
+  }
+}/*# sourceMappingURL=button.module.css.map */

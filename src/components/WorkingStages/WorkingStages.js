@@ -5,10 +5,7 @@ import { Heading } from "../../elements/heading/heading";
 const WorkingStages = () => {
   return (
     <div className={Styles.main}>
-      <Heading
-        name="Этапы нашей работы"
-        extraStyles={{ marginBottom: "124px" }}
-      />
+      <Heading name="Этапы нашей работы" />
       <div className={Styles.pipeLine}>
         <div className={Styles.stageBox}>
           <p className={Styles.number}>1</p>

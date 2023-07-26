@@ -7,4 +7,10 @@
   color: white;
   font-size: 24px;
   height: 66px;
+  @media (max-width: 440px) {
+    width: auto !important;
+    font-size: 22px;
+    height: 50px;
+    padding: 0 20px;
+  }
 }

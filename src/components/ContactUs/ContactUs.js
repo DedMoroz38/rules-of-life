@@ -8,25 +8,24 @@ import mailLetter from "../../images/mailLetter.svg";
 const ContactUs = () => {
   return (
     <div className={Styles.main}>
-      <Heading name="Свяжитесь с нами" extraStyles={{ lineHeight: "48px" }} />
-      <Heading
-        name="и мы согласуем вашу вывеску"
-        extraStyles={{ lineHeight: "48px" }}
-      />
+      <div className={Styles.heading_container}>
+        <Heading name="Свяжитесь с нами," />
+        <Heading name="и мы согласуем вашу вывеску" />
+      </div>
       <div className={Styles.contactsBox}>
-        <div className={Styles.contactBox}>
+        <a href="tel:88000007711" className={Styles.contactBox}>
           <div className={Styles.imageBox}>
             <img src={phoneBook} alt="телефон" />
           </div>
           <p>8 (800)000-77-11</p>
-        </div>
-        <div className={Styles.contactBox}>
+        </a>
+        <a href="" className={Styles.contactBox}>
           <div className={Styles.imageBox}>
             <img src={mailLetter} alt="mail" />
           </div>
           <p>mail.gmal.com</p>
-        </div>
-        <div className={Styles.contactBox}>
+        </a>
+        <a href="" className={Styles.contactBox}>
           <div className={Styles.imageBox}>
             <img src={calendar} alt="календарь" />
           </div>
@@ -34,7 +33,7 @@ const ContactUs = () => {
             <p>9:00 – 18:00</p>
             <p>сб, вс - выходной</p>
           </div>
-        </div>
+        </a>
       </div>
     </div>
   );

@@ -2,22 +2,38 @@ import React from "react";
 import { Heading } from "../../elements/heading/heading";
 import SwipingGallery from "../Swiper/Swiper";
 import Styles from "./Company.module.scss";
+import { useWidthContext } from "../../ContextProviders/WidthProivder";
 
 const Company = () => {
+  const { width } = useWidthContext();
+  console.log(width <= 1030);
+
   return (
     <div className={Styles.main}>
       <Heading
         name={"Компании, с которыми работаем"}
-        extraStyles={{ margin: "140px auto 51px" }}
+        extraStyles={{ margin: "0 auto" }}
       />
       <SwipingGallery
-        slidesPerView={3}
+        slidesPerView={width <= 440 ? 1 : width <= 1030 ? 2 : 3}
         arrowSize={"46px"}
-        slideDimentions={{
-          height: "162px",
-          width: "398px",
-        }}
-        arrowPosition={"-23px"}
+        slideDimentions={
+          width <= 440
+            ? {
+                height: "143px",
+                width: "350px",
+              }
+            : width <= 1030
+            ? {
+                height: "151px",
+                width: "370px",
+              }
+            : {
+                height: "162px",
+                width: "398px",
+              }
+        }
+        arrowPosition={"-15px"}
       />
     </div>
   );

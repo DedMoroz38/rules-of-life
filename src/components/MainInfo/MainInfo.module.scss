@@ -4,6 +4,10 @@
   height: 572px;
   margin-top: 101px;
   position: relative;
+  @media (max-width: 440px) {
+    margin-top: 40px;
+    height: auto;
+  }
 }
 
 .box {
@@ -14,6 +18,10 @@
 .subHeading {
   font-size: 20px;
   color: #757575;
+  margin-bottom: 50px;
+  @media (max-width: 440px) {
+    margin-bottom: 30px;
+  }
 }
 
 .description {
@@ -22,6 +30,10 @@
   color: #212121;
   margin-top: 25px;
   margin-bottom: 110px;
+  @media (max-width: 440px) {
+    margin-bottom: 30px;
+    font-size: 20px;
+  }
 }
 
 .attachButton {
@@ -42,10 +54,12 @@
   position: absolute;
   top: 0;
   right: 0;
-  border: 1px solid #000;
   & > img {
     width: 490px;
     height: 572px;
+    @media (max-width: 440px) {
+      display: none;
+    }
   }
 }
 
@@ -55,11 +69,18 @@
   column-gap: 30px;
   justify-content: space-between;
   margin-top: 30px;
+  @media (max-width: 1030px) {
+    column-gap: 20px;
+  }
+  @media (max-width: 440px) {
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(3, 210px);
+  }
 }
 
 .descriptionBox {
   font-weight: 700;
-  font-style: 20px;
+  font-size: 20px;
   color: #212121;
   padding: 22px 27px;
   display: flex;
@@ -67,4 +88,11 @@
   background-repeat: no-repeat;
   background: rgba(178, 235, 242, 0.35);
   border-radius: 25px;
+  @media (max-width: 1030px) {
+    border-radius: 15px;
+  }
+  @media (max-width: 440px) {
+    border-radius: 8px;
+    font-weight: 400;
+  }
 }

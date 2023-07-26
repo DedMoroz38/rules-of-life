@@ -1,0 +1,130 @@
+.container, .box {
+  max-width: 1260px;
+  margin: 0 auto;
+  padding: 0 1%;
+}
+@media (max-width: 1030px) {
+  .container, .box {
+    max-width: 800px;
+  }
+}
+@media (max-width: 440px) {
+  .container, .box {
+    max-width: 350px;
+    padding: 0;
+  }
+}
+
+.main {
+  height: 572px;
+  margin-top: 101px;
+  position: relative;
+}
+@media (max-width: 440px) {
+  .main {
+    margin-top: 40px;
+    height: auto;
+  }
+}
+
+.box {
+  margin-bottom: 81px;
+}
+
+.subHeading {
+  font-size: 20px;
+  color: #757575;
+  margin-bottom: 50px;
+}
+@media (max-width: 440px) {
+  .subHeading {
+    margin-bottom: 30px;
+  }
+}
+
+.description {
+  font-weight: 400;
+  font-size: 24px;
+  color: #212121;
+  margin-top: 25px;
+  margin-bottom: 110px;
+}
+@media (max-width: 440px) {
+  .description {
+    margin-bottom: 30px;
+    font-size: 20px;
+  }
+}
+
+.attachButton {
+  cursor: pointer;
+  border: none;
+  border-radius: 45px;
+  background: rgba(255, 87, 34, 0.85);
+  box-shadow: 3px 3px 15px 0px rgba(0, 0, 0, 0.2509803922);
+  color: white;
+  font-size: 24px;
+  width: 388px;
+  height: 66px;
+  margin-top: 110px;
+}
+
+.right {
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.right > img {
+  width: 490px;
+  height: 572px;
+}
+@media (max-width: 440px) {
+  .right > img {
+    display: none;
+  }
+}
+
+.descriptionContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+@media (max-width: 1030px) {
+  .descriptionContainer {
+    -moz-column-gap: 20px;
+         column-gap: 20px;
+  }
+}
+@media (max-width: 440px) {
+  .descriptionContainer {
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(3, 210px);
+  }
+}
+
+.descriptionBox {
+  font-weight: 700;
+  font-size: 20px;
+  color: #212121;
+  padding: 22px 27px;
+  display: flex;
+  height: 196px;
+  background-repeat: no-repeat;
+  background: rgba(178, 235, 242, 0.35);
+  border-radius: 25px;
+}
+@media (max-width: 1030px) {
+  .descriptionBox {
+    border-radius: 15px;
+  }
+}
+@media (max-width: 440px) {
+  .descriptionBox {
+    border-radius: 8px;
+    font-weight: 400;
+  }
+}/*# sourceMappingURL=MainInfo.module.css.map */

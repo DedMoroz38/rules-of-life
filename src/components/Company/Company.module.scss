@@ -3,4 +3,8 @@
 .main {
   @extend .container;
   margin-bottom: 29px;
+  margin-top: 140px;
+  @media (max-width: 440px) {
+    margin-top: 81px;
+  }
 }

@@ -4,9 +4,12 @@ import { OrangeButton } from "../../elements/orangeButton/button";
 import { Heading } from "../../elements/heading/heading";
 import bear from "../../images/bear.png";
 import PhotoAttachModalWindow from "../AttachPhoto/AttachPhoto.js";
+import { useWidthContext } from "../../ContextProviders/WidthProivder";
 
 const MainInfo = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const { width } = useWidthContext();
+
   useEffect(() => {
     isOpen
       ? (document.body.style.cssText = `
@@ -31,7 +34,7 @@ const MainInfo = () => {
         <p className={Styles.subHeading}>Подзаголовок</p>
         <Heading
           name={"Выполним работу за 45 дней в любом городе России"}
-          extraStyles={{ width: "900px", marginTop: "50px" }}
+          extraStyles={width >= 1030 ? { width: "900px" } : null}
         />
         <p className={Styles.description}>Описание</p>
         <OrangeButton
@@ -40,7 +43,7 @@ const MainInfo = () => {
           width="388px"
         />
         <div className={Styles.right}>
-          <img src={bear} alt="" />
+          <img src={bear} alt="фото" />
         </div>
       </div>
       <div className={Styles.descriptionContainer}>

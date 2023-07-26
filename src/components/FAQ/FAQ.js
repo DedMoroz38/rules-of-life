@@ -7,7 +7,7 @@ import { FAQSelector } from "../../elements/FAQSelector/FAQSelector";
 const FAQ = () => {
   return (
     <div className={Styles.container}>
-      <Heading name="FAQ" extraStyles={{ marginTop: "183px" }} />
+      <Heading name="FAQ" />
       <p className={Styles.subHeading}>Часто задаваемые вопросы</p>
       <div className={Styles.informationBox}>
         <FAQSelector

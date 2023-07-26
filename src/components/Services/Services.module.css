@@ -1,0 +1,100 @@
+.container {
+  max-width: 1260px;
+  margin: 0 auto;
+  padding: 0 1%;
+}
+@media (max-width: 1030px) {
+  .container {
+    max-width: 800px;
+  }
+}
+@media (max-width: 440px) {
+  .container {
+    max-width: 350px;
+    padding: 0;
+  }
+}
+
+.description {
+  font-weight: 300;
+  font-size: 20px;
+  color: #757575;
+  line-height: 27px;
+}
+.description:last-of-type {
+  margin-bottom: 50px;
+}
+@media (max-width: 440px) {
+  .description {
+    font-size: 18px;
+    line-height: 20px;
+  }
+}
+
+.servicesContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+}
+@media (max-width: 1030px) {
+  .servicesContainer {
+    -moz-column-gap: 20px;
+         column-gap: 20px;
+  }
+}
+@media (max-width: 440px) {
+  .servicesContainer {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 200px);
+    row-gap: 15px;
+  }
+}
+
+.serviceBox {
+  border: 1px solid #bdbdbd;
+  border-radius: 10px;
+  padding: 39px 25px;
+}
+@media (max-width: 1030px) {
+  .serviceBox {
+    height: 361px;
+  }
+}
+@media (max-width: 440px) {
+  .serviceBox {
+    height: auto;
+    background-repeat: 8px;
+    padding: 20px 12px;
+  }
+}
+
+.serviceHeading {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+@media (max-width: 1030px) {
+  .serviceHeading {
+    font-size: 20px;
+  }
+}
+
+.serviceName {
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.buttonBox {
+  margin-top: 65px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+@media (max-width: 440px) {
+  .buttonBox {
+    margin-top: 40px;
+  }
+}/*# sourceMappingURL=Services.module.css.map */

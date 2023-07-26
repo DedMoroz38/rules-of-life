@@ -1,0 +1,14 @@
+.heading {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 52px;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+@media (max-width: 440px) {
+  .heading {
+    font-size: 26px;
+    font-weight: 500;
+    line-height: 26px;
+  }
+}/*# sourceMappingURL=heading.module.css.map */
