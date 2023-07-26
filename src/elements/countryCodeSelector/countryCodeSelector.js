@@ -4,7 +4,6 @@ import { useOutsideAlerter } from "../../hooks/useOutsideAlerter";
 
 export const CountryCodeSelector = () => {
   const boxRef = useRef(null);
-  const buttonRef = useRef(null);
   const [isOpen, setIsOpen] = useState(false);
   const [countryCode, setCountryCode] = useState("+7");
   useOutsideAlerter(boxRef, () => setIsOpen(false));
