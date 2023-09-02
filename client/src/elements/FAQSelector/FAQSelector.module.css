@@ -1,0 +1,113 @@
+@keyframes slide-bottom {
+  0% {
+    transform: translateY(0);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(20px);
+    opacity: 1;
+  }
+}
+@keyframes slide-bottom-mobile {
+  0% {
+    transform: translateY(0);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(5px);
+    opacity: 1;
+  }
+}
+.rotate {
+  transform: rotate(90deg);
+}
+
+.questionBox {
+  cursor: pointer;
+  height: 75px;
+  border-radius: 37px;
+  background: rgba(178, 235, 242, 0.35);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 45px;
+  padding-right: 75px;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 33px;
+  margin-top: 40px;
+  -webkit-tap-highlight-color: transparent;
+}
+.questionBox:first-child {
+  margin-top: 0;
+}
+.questionBox > p {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 33px;
+}
+.questionBox > p > span {
+  font-weight: 700;
+  font-size: 22px;
+}
+.questionBox > img {
+  transition: all 0.4s;
+}
+@media (max-width: 440px) {
+  .questionBox {
+    border-radius: 15px;
+    height: auto;
+    padding: 10px 20px;
+    margin-top: 10px;
+  }
+  .questionBox:first-child {
+    margin-top: 0;
+  }
+  .questionBox > p {
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 20px;
+  }
+  .questionBox > p > span {
+    font-weight: 500;
+    font-size: 18px;
+  }
+  .questionBox > img {
+    margin-left: 20px;
+    height: 20px;
+  }
+}
+
+.answerBox {
+  border: 3px solid #0097a7;
+  border-radius: 37px;
+  padding: 20px 47px;
+  animation: slide-bottom 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+@media (max-width: 440px) {
+  .answerBox {
+    animation: slide-bottom-mobile 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    border: 1px solid #0097a7;
+    border-radius: 15px;
+    padding: 10px 20px;
+  }
+}
+
+.answer {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 33px;
+  color: #212121;
+}
+@media (max-width: 1030px) {
+  .answer {
+    line-height: 25px;
+    font-size: 20px;
+  }
+}
+@media (max-width: 440px) {
+  .answer {
+    line-height: 20px;
+    font-size: 17px;
+  }
+}/*# sourceMappingURL=FAQSelector.module.css.map */

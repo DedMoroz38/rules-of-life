@@ -1,0 +1,117 @@
+@keyframes open-up {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.main {
+  position: relative;
+  background: white;
+  width: 1260px;
+  z-index: 3;
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+  animation: open-up 0.2s;
+}
+@media (max-width: 440px) {
+  .main {
+    width: 90vw;
+  }
+}
+
+.headerBox {
+  background: rgb(249, 248, 248);
+  border-radius: 15px 15px 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 58px;
+  padding: 0 25px;
+}
+
+.heading {
+  display: flex;
+  font-size: 20px;
+}
+
+.inputContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  height: 50;
+}
+
+.inputBox {
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  height: 45px;
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+.inputBox > img {
+  width: 25px;
+  filter: invert(81%) sepia(0%) saturate(36%) hue-rotate(136deg) brightness(87%) contrast(90%);
+}
+.inputBox > input {
+  font-size: 17px;
+  margin-left: 10px;
+  height: 100%;
+  border: none;
+  width: 100%;
+  color: rgba(0, 0, 0, 0.8);
+}
+.inputBox > input::-moz-placeholder {
+  padding-left: 5px;
+  font-size: 20px;
+  font-weight: 200;
+  color: #afafaf;
+  font-size: 18px;
+}
+.inputBox > input::placeholder {
+  padding-left: 5px;
+  font-size: 20px;
+  font-weight: 200;
+  color: #afafaf;
+  font-size: 18px;
+}
+
+.commonCitiesBox {
+  padding: 0 20px;
+  width: 100%;
+}
+@media (max-width: 440px) {
+  .commonCitiesBox {
+    height: 50vh;
+    overflow-y: scroll;
+  }
+}
+.commonCitiesBox::-webkit-scrollbar {
+  width: 0;
+}
+
+.commonCity {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: start;
+}
+.commonCity > p {
+  margin-bottom: 10px;
+  background-color: #f7f7f7;
+  padding: 10px;
+  margin-right: 10px;
+  border-radius: 12px;
+  transition: background 0.2s, color 0.2s;
+  cursor: pointer;
+  font-size: 16px;
+}
+.commonCity > p:hover {
+  color: white;
+  background: rgba(255, 87, 34, 0.85);
+}/*# sourceMappingURL=CitySelector.module.css.map */

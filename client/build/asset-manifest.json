@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/static/css/main.49746e99.css",
+    "main.js": "/static/js/main.a15c4907.js",
+    "static/js/787.18fa75d7.chunk.js": "/static/js/787.18fa75d7.chunk.js",
+    "static/media/bear.png": "/static/media/bear.fcc6838c0e9eb6d2d7e2.png",
+    "static/media/phoneBook.svg": "/static/media/phoneBook.5c7d2698fdb984602eaf8d7f49d20839.svg",
+    "static/media/calendar.svg": "/static/media/calendar.e9299b040ac54688f812e37acde57988.svg",
+    "static/media/mailLetter.svg": "/static/media/mailLetter.d4bbef486bd9ae2ebf27e6b70f37cf54.svg",
+    "static/media/vk.svg": "/static/media/vk.def886e6412da0e32694aad622b9deee.svg",
+    "static/media/wa.svg": "/static/media/wa.3aaec8ee7aae0675abd64bff073bfe3a.svg",
+    "static/media/clip.svg": "/static/media/clip.fbe677f3edfd3cae5e21dc8c2afe8171.svg",
+    "static/media/tg.svg": "/static/media/tg.ad6bbfdf2834f9ee6777445631b46031.svg",
+    "index.html": "/index.html",
+    "static/media/trash.svg": "/static/media/trash.d5a94dfbf47310a9496236c10e3e1cd5.svg",
+    "static/media/infoArrow.svg": "/static/media/infoArrow.73bd59240277af967a922a8d32a0464d.svg",
+    "static/media/arrow.svg": "/static/media/arrow.18bf63dab6f6c68e3787006205ee6ae6.svg",
+    "main.49746e99.css.map": "/static/css/main.49746e99.css.map",
+    "main.a15c4907.js.map": "/static/js/main.a15c4907.js.map",
+    "787.18fa75d7.chunk.js.map": "/static/js/787.18fa75d7.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.49746e99.css",
+    "static/js/main.a15c4907.js"
+  ]
+}

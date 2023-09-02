@@ -1,0 +1,74 @@
+.container {
+  max-width: 1260px;
+  margin: 0 auto;
+  padding: 0 1%;
+}
+@media (max-width: 1030px) {
+  .container {
+    max-width: 800px;
+  }
+}
+@media (max-width: 440px) {
+  .container {
+    max-width: 350px;
+    padding: 0;
+  }
+}
+
+path {
+  transition: all 0.3s;
+}
+
+path:hover {
+  cursor: pointer;
+  fill: rgba(255, 87, 34, 0.85);
+  stroke: black;
+}
+
+.svgContainer > svg {
+  width: 100%;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.citySelector {
+  margin: 0 auto;
+  cursor: pointer;
+  border: none;
+  background: rgba(255, 87, 34, 0.85);
+  width: 250px;
+  min-height: 56px;
+  border-radius: 30px;
+  box-shadow: 3px 3px 15px 0px rgba(0, 0, 0, 0.2509803922);
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 25px;
+  color: white;
+  position: relative;
+  padding: 10px 40px;
+}
+.citySelector::before, .citySelector::after {
+  content: "";
+  background-color: #fff;
+  position: absolute;
+  display: block;
+  right: 35px;
+  width: 12px;
+  height: 2px;
+  transition: all 0.3s ease-out;
+  top: 50%;
+  transform: translate(-50%, 0) translate(-4px, -50%) rotate(45deg);
+}
+.citySelector::after {
+  transform: translate(-50%, 0) translate(4px, -50%) rotate(-45deg);
+}
+
+.citySelectorOpen::before {
+  transform: translate(-4px, -50%) rotate(-45deg);
+}
+.citySelectorOpen::after {
+  transform: translate(-50%, 0) translate(4px, -50%) rotate(45deg);
+}/*# sourceMappingURL=map.module.css.map */

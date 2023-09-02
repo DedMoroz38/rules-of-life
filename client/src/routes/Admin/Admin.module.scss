@@ -1,0 +1,26 @@
+@import "../../App.scss";
+
+.header {
+  display: flex;
+  border-bottom: 1px solid #000;
+  height: 60px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 150px;
+  width: 80%;
+  margin: 0 auto;
+}
+.header > a {
+  text-decoration: none;
+  color: rgb(77, 76, 76);
+}
+
+:global .active {
+  color: rgb(0, 0, 0) !important;
+  font-weight: 600;
+}
+
+.spinnerBox {
+  display: flex;
+  justify-content: center;
+}

@@ -1,0 +1,27 @@
+.formBox {
+  margin-top: 20px;
+  border: 1px solid #000;
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 14px;
+  & > p {
+    font-weight: 700;
+    font-size: 20px;
+    & > span {
+      font-weight: 500;
+    }
+  }
+}
+
+.imagesBox {
+  overflow-y: scroll;
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+  padding-bottom: 12px;
+  & > img {
+    height: 400px;
+    border: 1px solid #6a6868;
+    margin-right: 20px;
+  }
+}
